@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>140 CSS Named Colors - Grouped Dark to Light</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <h1>140 CSS Named Colors</h1>
+    <p class="intro">
+      This version groups the named colors by visual family, sorts each family from darker to lighter,
+      shows the hex value, and lets you copy either the color name or hex code.
+    </p>
+
+    <section class="toolbar">
+      <div class="toolbar-left">
+        <div class="badge">
+          <span>Total Colors</span>
+          <span id="totalCount">140</span>
+        </div>
+
+        <input
+          id="searchInput"
+          class="search"
+          type="text"
+          placeholder="Search color name, hex, or family..."
+          aria-label="Search colors"
+        />
+      </div>
+
+      <div class="legend" id="resultsText">Showing all 140 colors</div>
+    </section>
+
+    <div id="app"></div>
+
+    <p class="footer-note">
+      Note: the grouping is visual rather than official CSS taxonomy, so a few colors could reasonably fit in more than one family.
+    </p>
+  </main>
+
+  <script src="javascriptcolors.js"></script>
+</body>
+</html>
